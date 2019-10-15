@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Righteous', cursive;
+
 }
 
+
+header{
+    width: 100%;
+    background-color: transparent;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.logo{
+    margin-left: 8%;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    color: white;
+}
 
 
 .home{
@@ -13,6 +33,42 @@
     background-position: center;
 }
 
-.main{
+.cf{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+
+.main-text{
+    font-size: 6rem;
+    color: white;
+}
+
+.menu{
+    list-style: none;
+}
+
+li{
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: right;
+
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
+
+.scroll{
+    width: 10%;
+    position: relative;
+    bottom: 0%;
+    left: 50%;
 }
