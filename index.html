@@ -17,45 +17,60 @@
 
     <link rel="stylesheet" href="styles/styles.css">
 
+    <!-- Always get the latest version -->
+    <!-- Not recommended for production sites! -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 <body>
     <section>
     <div class="home" id="home">
-            <header style="background-color: transparent;">
-                    <nav>
-                        <a href=""><h3 class="logo">Roberto Carrasquel</h3></a>
-                    </nav>
-                </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href=""><h3 class="logo">Roberto Carrasquel</h3></a>
+                </div>
+            </div>
+        </div>
         <div class="main">
             <div class="container-fluid cf">
                 <div class="row">
                     <div class="col-md-3 offset-md-1">
                         <h1 class="main-text">Web Developer</h1>
-                        <p>
+                        <p class="social">
                             <a href=""><img src="assets/logos/github.svg" alt=""></a>
                             <a href="" class="ml-3"><img src="assets/logos/twitter.svg" alt=""></a>
                             <a href="" class="ml-3"><img src="assets/logos/ig.svg" alt=""></a>
                         </p>
                     </div>
                     <div class="col-md-2 offset-md-5">
-                        <ul class="menu">
+                        <ul class="menu-main">
                             <li>
-                                <a href="">
+                                <a data-scroll href="#home">
                                     Home <img src="assets/logos/circle-active.svg" alt="">
                                 </a> 
                             </li>
                             <li>
-                                <a href="">
+                                <a data-scroll href="#about">
                                     About me <img src="assets/logos/circle-desible.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a data-scroll href="#works">
                                     Works <img src="assets/logos/circle-desible.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a data-scroll href="#contact">
                                     Contact <img src="assets/logos/circle-desible.png" alt="">
                                 </a>
                             </li>
@@ -65,9 +80,80 @@
             </div>
         </div>
         <div class="scroll">
-            <img src="assets/logos/mouse.svg" alt="">
+            <img class="gbounce" src="assets/logos/mouse.svg" alt="">
         </div>
     </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 title-about">
+                    <h2>About Me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 about-col mt-4">
+                    <p class="about-text">
+                        Hello, I'm Roberto Carrasquel a freelance designer, front end developer and Designer UI/UX based in Caracas - Venezuela. I Love designing and developing websites . I have been working in the field for more than 2 year and would Love to help you take your product to the next level.
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                                <h4>Skills</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="logo-skills" src="./assets/logos/html-5.svg" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="logo-skills" src="./assets/logos/css-3.svg" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="logo-skills" src="./assets/logos/js.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                            <div class="col-md-4">
+                                    <img class="logo-skills" src="./assets/logos/react.svg" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <img class="logo-skills" src="./assets/logos/logo-xd.svg" alt="">
+                                </div>
+                                <div class="col-md-4">
+                                    <img class="logo-skills" src="./assets/logos/figma-logo.svg" alt="">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        <img class="avatar" src="/assets/logos/avatar.png" alt="">
+                    </div>
+                    <div class="col-md-2 offset-md-1">
+                            <ul class="menu">
+                                    <li>
+                                        <a data-scroll href="#home">
+                                            Home <img src="assets/logos/circle-desible.png" alt="">
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a data-scroll href="#about">
+                                            About me <img src="assets/logos/circle-active.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-scroll href="#works">
+                                            Works <img src="assets/logos/circle-desible.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-scroll href="#contact">
+                                            Contact <img src="assets/logos/circle-desible.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
     </section>
       
 
